@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#importing flask, jsonify, render template and  request
 from flask import Flask, jsonify, render_template, request 
 app = Flask(__name__)
 
@@ -17,11 +17,15 @@ def compute():
 @app.route('/result')
 def name_result():
     name = {
-        "first": "Ifeanyi",
-        "last": "Akawi",
+        "first": "Paul",
+        "last": "Omikunle",
         "course": "Data Science"
     }
-
+    {
+        "first": "Lola",
+        "last": "Omikunle",
+        "course": "Machine learning"
+    }
     return jsonify(name)
 
 
